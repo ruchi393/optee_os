@@ -11,3 +11,7 @@
 void caam_hal_ctrl_init(vaddr_t baseaddr __unused)
 {
 }
+
+void caam_hal_ctrl_inc_priblob(vaddr_t baseaddr __unused)
+{
+}

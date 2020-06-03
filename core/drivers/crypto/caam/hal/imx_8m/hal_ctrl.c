@@ -14,3 +14,7 @@ void caam_hal_ctrl_init(vaddr_t baseaddr)
 	/* Enable DECO watchdogs */
 	io_setbits32(baseaddr + MCFGR, MCFGR_WDE);
 }
+
+void caam_hal_ctrl_inc_priblob(vaddr_t baseaddr __unused)
+{
+}
