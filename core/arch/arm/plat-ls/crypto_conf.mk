@@ -73,6 +73,7 @@ cryphw-one-enabled = $(call cfg-one-enabled, \
 $(eval $(call cryphw-enable-drv-hw, HASH))
 $(eval $(call cryphw-enable-drv-hw, CIPHER))
 $(eval $(call cryphw-enable-drv-hw, RSA))
+$(eval $(call cryphw-enable-drv-hw, HMAC))
 
 # Define the RSA Private Key Format used by the CAAM
 #   Format #1: (n, d)
