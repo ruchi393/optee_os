@@ -7,6 +7,8 @@
 #ifndef __CAAM_HASH_H__
 #define __CAAM_HASH_H__
 
+#include <caam_common.h>
+
 #ifdef CFG_NXP_CAAM_HASH_DRV
 /*
  * Initialize the Hash module
