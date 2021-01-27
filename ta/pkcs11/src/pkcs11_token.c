@@ -77,6 +77,11 @@ get_token_shared_object_handle_db(struct pkcs11_session *session)
 	return &session->client->token_object_handle_db[id];
 }
 
+struct session_list *get_session_list(struct pkcs11_session *session)
+{
+	return &session->client->session_list;
+}
+
 struct pkcs11_client *tee_session2client(void *tee_session)
 {
 	struct pkcs11_client *client = NULL;

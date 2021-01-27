@@ -474,6 +474,7 @@ enum pkcs11_rc entry_find_objects_init(struct pkcs11_client *client,
 	struct pkcs11_object *obj = NULL;
 	struct pkcs11_find_objects *find_ctx = NULL;
 	struct handle_db *soh_db = NULL;
+	struct pkcs11_session *sess = NULL;
 
 	if (!client || ptypes != exp_pt)
 		return PKCS11_CKR_ARGUMENTS_BAD;
@@ -542,16 +543,21 @@ enum pkcs11_rc entry_find_objects_init(struct pkcs11_client *client,
 	 * candidates that match caller attributes.
 	 */
 
-	LIST_FOREACH(obj, &session->object_list, link) {
-		if (check_access_attrs_against_token(session, obj->attributes))
+	TAILQ_FOREACH(sess, get_session_list(session), link) {
+		if (sess->token != session->token)
 			continue;
 
-		if (!attributes_match_reference(obj->attributes, req_attrs))
-			continue;
+		LIST_FOREACH(obj, &sess->object_list, link) {
+			if (check_access_attrs_against_token(sess, obj->attributes))
+				continue;
 
-		rc = find_ctx_add(find_ctx, pkcs11_object2handle(obj, session));
-		if (rc)
-			goto out;
+			if (!attributes_match_reference(obj->attributes, req_attrs))
+				continue;
+
+			rc = find_ctx_add(find_ctx, pkcs11_object2handle(obj, session));
+			if (rc)
+				goto out;
+		}
 	}
 
 	soh_db = get_token_shared_object_handle_db(session);

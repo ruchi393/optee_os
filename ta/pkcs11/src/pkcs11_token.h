@@ -339,4 +339,5 @@ enum pkcs11_rc entry_ck_login(struct pkcs11_client *client,
 enum pkcs11_rc entry_ck_logout(struct pkcs11_client *client,
 			       uint32_t ptypes, TEE_Param *params);
 
+struct session_list *get_session_list(struct pkcs11_session *session);
 #endif /*PKCS11_TA_PKCS11_TOKEN_H*/
