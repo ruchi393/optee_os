@@ -1,0 +1,215 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'set_tmem_param' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'register_shm' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'set_rmem_param' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: cache.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'cache_operation' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'get_open_session_meta' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'copy_in_params' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_fast.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'tee_entry_exchange_capabilities' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: arch_svc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'save_panic_stack' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: arch_svc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'user_ta_handle_svc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: arch_svc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'get_tee_syscall_func' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'param_mem_from_mobj' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_fast.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_entry_disable_shm_cache' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: arch_svc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'get_ldelf_syscall_func' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: arch_svc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ldelf_handle_svc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: arch_svc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct syscall_entry *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: arch_svc_private.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'tee_svc_do_call' function has no definition
+reason: defined in assembly. False positive
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_fast.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 36
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_fast.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 36
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: arch_svc.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 46
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_std.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand lies between zero and one less than the width in bits of the underlying type of the LHS operand
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

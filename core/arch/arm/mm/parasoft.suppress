@@ -1,0 +1,1199 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'get_discovered_nsec_ddr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_get_type_by_pa' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'pbuf_is_special_mem' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'phys_to_virt_ta_vaspace' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_shm_get_pa' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'carve_out_phys_mem' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_mm_init' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'pcalloc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'cache_op_inner' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_mm_find' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'pbuf_is_nsec_ddr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_reg_shm_get_by_cookie' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_shm_get_va' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'find_map_by_va' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_private.h
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_check_end_pa' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_with_fobj_get_pa' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'can_map_at_level' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'assign_mem_va' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'desc_to_mattr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'find_map_by_type_and_pa' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_va2pa_helper' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_type_to_attr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_nsec_ddr_is_defined' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'phys_to_virt_io' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'va_is_in_map' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'check_va_matches_pa' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_mm_is_empty' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'map_is_tee_ram' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'tee_mm_final' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_entry_to_finer_grained' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'verify_special_mem_areas' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'get_va_width' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_reg_shm_release_by_cookie' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'io_pa_or_va_secure' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_phys_get_pa' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_with_fobj_alloc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '_pbuf_intersects' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'pmalloc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_phys_alloc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_vbuf_is' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_reg_shm_get_cattr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_add_mapping' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'core_mmu_populate_user_map' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_mm_stats_allocated' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'pa_is_in_map' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_reg_shm_dec_map' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_phys_get_va' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'tee_mm_get_pool_stats' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_get_va' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_phys_matches' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_mm_alloc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pgt_cache.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'pgt_alloc_unlocked' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_pbuf_is' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'io_pa_or_va' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_reg_shm_inc_map' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'check_pa_matches_va' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_map_pages' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_mm_alloc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_reg_shm_get_va' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'reg_shm_find_unlocked' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_remove_mapping' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_mapped_shm_alloc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'tee_mm_free' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pgt_cache.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'pgt_alloc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_get_fault_type' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_shm_alloc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_mattr_is_ok' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'fit_in_gap' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mattr_to_desc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pgt_cache.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'pgt_free' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'get_physical_addr_size_bits' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mem_map_add_id_map' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_mm_get_bytes' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_mmu_map_contiguous_pages' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_mm_alloc2' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_reg_shm_alloc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'find_map_by_type' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_with_fobj_get_cattr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'add_phys_mem' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'find_map_by_pa' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_reg_shm_size' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'add_pager_vaspace' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '_pbuf_is_inside' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'io_pa_or_va_nsec' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_reg_shm_get_pa' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'mobj_phys_get_cattr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'map_pa2va' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'va_end' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'va_end' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct mobj_with_fobj *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const struct core_mmu_phys_mem *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct core_mmu_phys_mem *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct mobj_mm *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct mobj_phys *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const struct tee_mmap_region *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_mmap_region *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct mobj_reg_shm *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint64_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pgt_cache.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint64_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint64_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'tee_mm_entry_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct mobj_shm *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'unsigned' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pgt_cache.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'unsigned' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_private.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'unsigned' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 36
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 66
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 73
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 72
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 60
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 53
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 54
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 33
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 55
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 54
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 55
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 33
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 32767 bytes in an object: 32768
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 36
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 72
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 73
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 53
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 60
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 66
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand lies between zero and one less than the width in bits of the underlying type of the LHS operand
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_mmu_lpae.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand lies between zero and one less than the width in bits of the underlying type of the LHS operand
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mobj_dyn_shm.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pgt_cache.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

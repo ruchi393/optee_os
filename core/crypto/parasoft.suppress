@@ -1,0 +1,903 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'generate_random_data' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_acipher_sm2_pke_decrypt' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4-ctr.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_sm4_ctr_alloc_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__gcm_enc_final' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'internal_aes_gcm_enc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_acipher_ecc_sign' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'maybe_reseed' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_acipher_sm2_pke_encrypt' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm3-hash.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'op_sm3_hash_final' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'drain_ring_buffer' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'add_event' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'internal_aes_gcm_init' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__gcm_update_payload' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: cbc-mac.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_cbc_mac_final' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4-ctr.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'sm4_ctr_init' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'reseed_rate_limiting' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: signed_hdr.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'shdr_verify_signature' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-cts.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'cts_init' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'internal_aes_gcm_dec' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4-ecb.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_sm4_ecb_alloc_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__gcm_init' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: cbc-mac.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_cbc_mac_update' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: signed_hdr.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'shdr_alloc_and_copy' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'get_next_pnum' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_authenc_dec_final' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'operation_final' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4-ecb.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'sm4_ecb_init' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm3.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'sm3_update' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_aes_gcm_alloc_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_authenc_enc_final' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_cipher_alloc_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm3-hash.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_sm3_alloc_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'pop_ring_buffer' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__gcm_dec_final' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4-cbc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'sm4_cbc_init' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_rng_read' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: cbc-mac.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_cbc_mac_alloc_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm3-hmac.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'op_sm3_hmac_final' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_mac_update' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_authenc_update_payload' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4-cbc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_sm4_cbc_alloc_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-cts.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_aes_cts_alloc_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_cipher_init' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm3-hmac.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_hmac_sm3_alloc_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_acipher_ecc_verify' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'generate_blocks' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'key_from_data' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm2-kdf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'sm2_kdf' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__gcm_update_aad' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_authenc_alloc_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'fortuna_read' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_rng_init' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'restart_pool' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-cts.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'cbc_cts_update' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_mac_alloc_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_cipher_get_block_size' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'crypto_acipher_ecc_shared_secret' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-cts.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm2-kdf.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: signed_hdr.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct crypto_hash_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-cts.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct cts_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4-ecb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct sm4_ecb_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct crypto_authenc_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4-cbc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct sm4_cbc_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm3-hash.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct sm3_hash_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm-sw.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: signed_hdr.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct shdr *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm-sw.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct crypto_cipher_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4-ctr.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct sm4_ctr_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct aes_gcm_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm3-hmac.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct sm3_hmac_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct crypto_mac_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: cbc-mac.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct crypto_cbc_mac_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm-sw.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm-ghash-tbl.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm-ghash-tbl.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm3.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-cts.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: cbc-mac.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: cbc-mac.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm-sw.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: cbc-mac.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: cbc-mac.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: cbc-mac.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm-sw.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm4.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand lies between zero and one less than the width in bits of the underlying type of the LHS operand
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sm3.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand lies between zero and one less than the width in bits of the underlying type of the LHS operand
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: rng_fortuna.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: aes-gcm.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

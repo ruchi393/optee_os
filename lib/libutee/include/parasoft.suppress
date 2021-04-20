@@ -1,0 +1,719 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: utee_defines.h
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__tee_alg_get_main_alg' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_defines.h
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__tee_alg_get_digest_hash' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_defines.h
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__tee_alg_get_digest_size' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_defines.h
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__tee_alg_hash_algo' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_defines.h
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__tee_alg_get_class' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_syscalls.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_syscalls.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_header.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: elf32.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_header.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_syscalls.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: elf64.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: link.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: link.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_params' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_params' in a translation unit 'arch_svc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_header.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ta_head' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_attribute' in a translation unit 'tee_api_property.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_attribute' in a translation unit 'arch_svc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_attribute' in a translation unit 'user_ta_entry.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_header.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ta_head' in a translation unit 'ta_elf_rel.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_attribute' in a translation unit 'tee_api_arith_mpi.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_params' in a translation unit 'tee_api_property.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_params' in a translation unit 'tee_api_objects.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_params' in a translation unit 'assert.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_attribute' in a translation unit 'trace_ext.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_attribute' in a translation unit 'tee_api.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_attribute' in a translation unit 'assert.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_attribute' in a translation unit 'tee_api_operations.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_params' in a translation unit 'tee_api_panic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_params' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_params' in a translation unit 'tee_api_arith_mpi.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_header.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ta_head' in a translation unit 'dl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_params' in a translation unit 'tee_api_operations.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_attribute' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_attribute' in a translation unit 'tee_api_panic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'utee_params' in a translation unit 'trace_ext.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_syscalls.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_syscalls.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 33
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_syscalls.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_syscalls.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_syscalls.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 33
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 36
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 40
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines_extensions.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 42
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 48
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 51
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_syscall_numbers.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 39
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_syscall_numbers.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 43
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_syscall_numbers.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: __tee_tcpsocket_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 43
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 37
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: __tee_tcpsocket_defines_extensions.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines_extensions.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: __tee_udpsocket_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 43
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines_extensions.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 36
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 43
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines_extensions.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 41
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 45
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 47
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_syscall_numbers.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_syscall_numbers.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 42
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_syscall_numbers.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 36
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_syscall_numbers.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_syscall_numbers.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 40
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: __tee_isocket_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_syscall_numbers.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 44
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_syscall_numbers.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 46
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 33
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 36
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_defines.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 39
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: utee_defines.h
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

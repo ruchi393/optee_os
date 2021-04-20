@@ -1,0 +1,599 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: strchr.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'strchr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcmp.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'memcmp' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memchr.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'memchr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strncmp.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'strncmp' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strstr.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'strstr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strstr.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strstr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strcpy.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strcpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memmove.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'memmove' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memchr.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'memchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strchr.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcmp.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'memcmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strncmp.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strncmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strtoul.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strtoul' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcpy.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'memcpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strlen.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strlen' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: abs.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'abs' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strcmp.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strcmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strncpy.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strncpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strrchr.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strrchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memset.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'memset' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memchr.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'memchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strncmp.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strncmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strcpy.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strcpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strstr.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strstr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strtoul.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strtoul' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strrchr.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strrchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memset.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'memset' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strcmp.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strcmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strncpy.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strncpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcpy.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'memcpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: abs.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'abs' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strlen.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strlen' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memmove.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'memmove' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strchr.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcmp.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'memcmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcmp.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcmp.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strrchr.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strncmp.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memchr.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strtoul.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: abs.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memset.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strcmp.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcpy.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strncmp.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strncpy.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memset.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strncpy.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strstr.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strstr.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strtoul.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strchr.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strcpy.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memmove.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memchr.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strcmp.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcmp.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strlen.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strncmp.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strcmp.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strchr.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bcmp.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strchr.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strtoul.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memchr.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcpy.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memmove.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memset.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcpy.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memmove.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memcmp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'unsigned char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: memchr.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const unsigned char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end

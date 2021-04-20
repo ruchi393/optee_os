@@ -1,0 +1,31 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: entry_fast.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 36
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: entry_fast.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 36
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end

@@ -1,0 +1,151 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: secstor_ta_mgmt.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stats.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct malloc_stats *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: system.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: system.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: secstor_ta_mgmt.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const struct shdr *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: secstor_ta_mgmt.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: system.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const TEE_UUID *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: device.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const struct pseudo_ta_head *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: secstor_ta_mgmt.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: device.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: device.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const struct embedded_ts *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: system.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'TEE_UUID *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: system.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: device.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stats.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: secstor_ta_mgmt.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: system.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

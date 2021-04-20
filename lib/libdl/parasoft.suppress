@@ -1,0 +1,71 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: dlfcn.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'dlopen' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dlfcn.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'invoke_system_pta' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dlfcn.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'dlsym' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dlfcn.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dlfcn.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dlfcn.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct dl_handle *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dlfcn.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

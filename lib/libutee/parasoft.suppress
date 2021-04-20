@@ -1,0 +1,935 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: trace_ext.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'printf' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'copy_param' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'TEE_FreePersistentObjectEnumerator' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'TEE_FreeTransientObject' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: base64.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '_base64_enc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_tcpudp_socket.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'udp_open' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_socket_pta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'invoke_socket_pta' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'TEE_StartPropertyEnumerator' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_system_pta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_invoke_supp_plugin' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_uuid_from_str.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_uuid_from_str' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: base64.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'get_idx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_tcpudp_socket.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tcp_ioctl' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'TEE_CheckMemoryAccessRights' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_tcpudp_socket.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'udp_ioctl' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'propget_get_ext_prop' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_arith_mpi.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'TEE_BigIntIsProbablePrime' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'TEE_AllocatePropertyEnumerator' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_socket_pta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__tee_socket_pta_open' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'TEE_CloseAndDeletePersistentObject' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'TEE_AllocateOperation' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'TEE_RestrictObjectUsage' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'TEE_CloseObject' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'TEE_ResetPersistentObjectEnumerator' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'TEE_SetOperationKey2' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'TEE_SetOperationKey' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_tcpudp_socket.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tcp_open' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_panic.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'check_access' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: base64.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '_base64_dec' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'TEE_Malloc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'TEE_CloseAndDeletePersistentObject1' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_system_pta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'invoke_system_pta' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'propset_get' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_system_pta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_map_zi' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_uuid_from_str.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'hex' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_tcpudp_socket.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'sock_close' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'TEE_InvokeTACommand' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'TEE_CopyObjectAttributes' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'TEE_IsAlgorithmSupported' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_arith_mpi.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'rng_read' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_arith_mpi.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'copy_mpi_to_bigint' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'TEE_ResetTransientObject' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'propget_get_property' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'rand' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: trace_ext.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'puts' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: abort.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'abort' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: trace_ext.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'putchar' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: trace_ext.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'printf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: abort.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'abort' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: trace_ext.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'putchar' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'rand' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: trace_ext.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'printf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: trace_ext.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'puts' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: trace_ext.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_private.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_uuid_from_str.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_arith_mpi.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: base64.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: assert.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: trace_ext.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_arith_mpi.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_uuid_from_str.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_arith_mpi.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'TEE_Identity *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_arith_mpi.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'unsigned char *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_arith_mpi.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'TEE_BigInt *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_tcpudp_socket.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'TEE_udpSocket_Setup *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: base64.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type '_Bool *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: base64.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const unsigned char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct __TEE_OperationHandle *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_tcpudp_socket.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct socket_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_tcpudp_socket.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'TEE_tcpSocket_Setup *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint32_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const char *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_property.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct prop_enumerator *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-DIR_4_1-b
+message: "src_op" may possibly be null
+reason: TEE_Panic takes care of this
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-DIR_4_1-b
+message: "operation" may possibly be null
+reason: TEE_Panic takes care of this
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-DIR_4_1-b
+message: "dst_op" may possibly be null
+reason: TEE_Panic takes care of this
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_tcpudp_socket.c
+rule-id: MISRAC2012-DIR_4_1-b
+message: "sock_ctx" may possibly be null
+reason: TEE_Panic takes care of this
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_tcpudp_socket.c
+rule-id: MISRAC2012-DIR_4_1-b
+message: "proto_error" may possibly be null
+reason: TEE_Panic takes care of this
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_operations.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_private.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 33
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_private.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_panic.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_panic.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 33
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_arith_mpi.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_panic.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_panic.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 33
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_private.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 33
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_private.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_arith_mpi.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_api_objects.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_socket_pta.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_system_pta.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

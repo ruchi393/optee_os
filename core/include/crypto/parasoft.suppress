@@ -1,0 +1,2119 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: internal_aes-gcm.h
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint64_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: internal_aes-gcm.h
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint64_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'huk_subkey.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'aes-gcm-ghash-tbl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: internal_aes-gcm.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'internal_aes_gcm_ctx' in a translation unit 'aes-gcm-sw.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ctx' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ctx' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'aes-gcm-sw.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ctx' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ops' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'signed_hdr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ctx' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ctx' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'huk_subkey.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ops' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ops' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'aes-gcm-ghash-tbl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ctx' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'aes-gcm-ghash-tbl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'crypto.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ops' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_cipher_ctx' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'signed_hdr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ctx' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_cipher_ops' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'aes-gcm-ghash-tbl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ops' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ops' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ops' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ctx' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'huk_subkey.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ops' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ctx' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'aes-gcm-sw.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'crypto.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ops' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'aes-gcm-ghash-tbl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'sm2-kdf.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'aes-gcm-sw.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ops' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ops' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'aes-gcm-sw.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'huk_subkey.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_cipher_ctx' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ctx' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ops' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ops' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'sm2-kdf.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'signed_hdr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'aes-gcm-ghash-tbl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ops' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'aes-gcm-sw.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_cipher_ops' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ops' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_cipher_ctx' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ctx' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'sm2-kdf.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ctx' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'aes-gcm-sw.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ctx' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_cipher_ops' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'signed_hdr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'sm2-kdf.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ctx' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ctx' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'crypto.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'signed_hdr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'sm2-kdf.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'huk_subkey.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'huk_subkey.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ctx' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'signed_hdr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ctx' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ops' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ops' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_cipher_ops' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ctx' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'signed_hdr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_cipher_ctx' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'aes-gcm-ghash-tbl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'huk_subkey.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ops' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'crypto.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'sm2-kdf.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'aes-gcm-ghash-tbl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'sm2-kdf.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'crypto.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ops' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'aes-gcm-sw.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'sm2-kdf.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'crypto.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'huk_subkey.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: internal_aes-gcm.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'internal_aes_gcm_ctx' in a translation unit 'aes-gcm-ghash-tbl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_authenc_ops' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'aes-gcm-sw.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_mac_ctx' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_hash_ctx' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: internal_aes-gcm.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: internal_aes-gcm.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_keypair' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_keypair_ops' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_public_ops' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_public_ops' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_keypair_ops' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_public_ops' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_keypair_ops' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_public_ops' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'sm2_kep_parms' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_keypair_ops' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_public_key' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_keypair_ops' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_public_ops' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_keypair' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dh_keypair' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ecc_public_key' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'rsa_public_key' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_public_ops' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_keypair_ops' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_public_ops' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_public_ops' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dsa_keypair' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_keypair_ops' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'crypto_ecc_keypair_ops' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: internal_aes-gcm.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: internal_aes-gcm.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 37
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: internal_aes-gcm.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: crypto_impl.h
+rule-id: MISRAC2012-RULE_1_1-c
+message: More than 31 initial characters in a macro name: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end

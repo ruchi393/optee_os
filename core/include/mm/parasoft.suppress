@@ -1,0 +1,743 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'mattr_perm_to_str' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mm.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fobj.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'ldelf_loader.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'pm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'unwind_arm64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'msg_param.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'tee_mm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'entry_fast.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'arch_svc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'spin_lock_debug.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'ldelf_loader.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'pl011.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'msg_param.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'rpc_io_i2c.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'pgt_cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'tee_mm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'timer_a64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'pseudo_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'trace_ext.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'pseudo_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'mutex.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'arch_svc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'pm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'rpc_io_i2c.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'tee_time.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'trace_ext.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'asm-defines.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'core_mmu.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'dt.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'dt.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'asm-defines.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'pgt_cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'panic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'link_dummies_paged.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'link_dummies_init.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'msg_param.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'pl011.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'entry_fast.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'dt.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'link_dummies_paged.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'spin_lock_debug.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'pseudo_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'tee_time.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'pm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'rpc_io_i2c.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'link_dummies_init.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: file.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'file_slice' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'vm_region' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: core_memprot.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'io_pa_va' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_mmu_types.h
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

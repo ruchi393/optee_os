@@ -1,0 +1,767 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: tee_time_generic.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_time_generic.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_enc_manager.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_pobj.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_cryp_hkdf.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_cryp_pbkdf2.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_supp_plugin_rpc.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ree_fs.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_storage.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tadb.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fs_htree.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_cryp_utl.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_cryp_concat_kdf.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fs_dirfile.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_fs_key_manager.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct ecc_keypair *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct dh_keypair *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_fs_rpc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const TEE_UUID *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_cryp_obj_secret *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fs_htree.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct htree_node *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_storage.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fs_htree.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tadb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fs_dirfile.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'bitstr_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_storage.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_storage_enum *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct rsa_public_key *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct dsa_public_key *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fs_htree.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_fs_htree *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_time_generic.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_ta_time_offs *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_storage.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'TEE_UUID *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct dsa_public_key *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct rsa_keypair *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tadb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ree_fs.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct ecc_keypair *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct dh_keypair *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_cryp_state *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct bignum **'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct dsa_keypair *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ree_fs.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_fs_dir *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_storage.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'TEE_UUID *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_ta_param *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct ecc_public_key *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tadb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'bitstr_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'TEE_Identity *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_storage.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct rsa_keypair *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fs_htree.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_pobj.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_pobj *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_fs_key_manager.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tadb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_tadb_ta_write *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ree_fs.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_fs_fd *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tadb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'bitstr_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tadb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_tadb_dir *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_obj.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_obj *' in function's return
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'TEE_Attribute *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tadb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_fs_key_manager.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tadb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_tadb_ta_read *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint32_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fs_dirfile.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_fs_dirfile_dirh *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_storage.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_storage.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_storage.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fs_htree.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fs_dirfile.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand lies between zero and one less than the width in bits of the underlying type of the LHS operand
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tadb.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand lies between zero and one less than the width in bits of the underlying type of the LHS operand
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: socket.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ree_fs.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_cryp_hkdf.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_svc_cryp.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand lies between zero and one less than the width in bits of the underlying type of the LHS operand
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_cryp_pbkdf2.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

@@ -1,0 +1,559 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'e32_parse_ehdr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ta_elf_resolve_sym' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'save_hashtab_from_segment' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'e64_parse_ehdr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ta_elf_set_elf_phdr_info' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'get_pad_begin' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ta_elf_find_elf' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'ta_elf_load_dependency' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'set_tls_offset' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dl.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'dlopen_entry' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'find_exidx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dl.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'dlsym_entry' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'realloc_elf_phdr_info' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'save_soname_from_segment' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'realloc_ifs' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'e32_tls_get_module' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'get_next_in_order' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__resolve_sym' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'add_deps_from_segment' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'queue_elf' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ta_elf_add_library' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'resolve_sym_helper' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'ta_elf_finalize_mappings' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'elf_get_init_fini_array' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'queue_elf_helper' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ta_elf_set_init_fini_info_compat' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'fill_ifs' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: main.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sys.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sys.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'Elf32_Ehdr *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'Elf32_Shdr *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'Elf32_Phdr *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct __init_fini32 *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'Elf32_Sym *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'Elf64_Sym *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint32_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const Elf_Phdr *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct dl_phdr_info *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct dl_phdr_info32 *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'Elf64_Ehdr *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'Elf32_Shdr *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint32_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct ta_elf *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'Elf64_Shdr *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct segment *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'Elf64_Shdr *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct __init_fini *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'Elf64_Phdr *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'segment' in a translation unit 'dl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf_rel.c
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tlsdesc' in a translation unit 'ta_elf_rel.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ta_elf' in a translation unit 'dl.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'segment' in a translation unit 'ta_elf_rel.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'segment' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ta_elf.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand lies between zero and one less than the width in bits of the underlying type of the LHS operand
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

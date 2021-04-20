@@ -1,0 +1,175 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: tcb.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'dl_iterate_phdr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'entry_close_session' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '_init_iterate_phdr_cb' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'ta_header_remove_session' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ta_header_get_session' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'entry_open_session' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ta_header_add_session' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tcb.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '__utee_tcb_init' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'entry_invoke_command' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tcb.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tcb.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct ta_session *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tcb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tcb_head *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct phdr_info *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'size_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tcb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'union dtv *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tcb.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct dl_phdr_info *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta_entry.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

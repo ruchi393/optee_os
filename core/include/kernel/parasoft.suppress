@@ -1,0 +1,2327 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: user_mode_ctx.h
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'to_user_mode_ctx' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: msg_param.h
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'msg_param_attr_is_tmem' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: asan.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'va_end' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_time.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_time.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'time' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: asan.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'va_end' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'short' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_common_otp.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: handle.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'unsigned' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: panic.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'short' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_store.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: refcount.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: asan.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: asan.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'asan_start' function has no definition
+reason: False +ve. Definition there
+author: ruchika
+suppression-end
+
+suppression-begin
+file: asan.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'asan_set_shadowed' function has no definition
+reason: False +ve. Definition there
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'entry_fast.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'msg_param.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'link_dummies_paged.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'spin_lock_debug.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'tee_time.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'asm-defines.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'dt.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'arch_svc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'timer_a64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'msg_param.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'timer_a64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'tee_mm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'pseudo_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'mutex.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'panic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'pseudo_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_store.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_store_ops' in a translation unit 'ldelf_loader.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'rpc_io_i2c.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'msg_param.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'unwind_arm64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'pm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_ctx' in a translation unit 'timer_a64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'entry_fast.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'arch_svc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'pseudo_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'tee_time.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'asm-defines.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'rpc_io_i2c.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'entry_fast.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'msg_param.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'pl011.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'spin_lock_debug.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'pseudo_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'link_dummies_paged.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session_head' in a translation unit 'panic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session_head' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'tee_mm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'tee_mm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'panic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'pm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session_head' in a translation unit 'unwind_arm64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'timer_a64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'tee_mm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'trace_ext.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'link_dummies_paged.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'msg_param.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'unwind_arm64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_ctx' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'asm-defines.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'core_mmu.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'asm-defines.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'entry_fast.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'pm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: lockdep.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'lockdep_edge' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'rpc_io_i2c.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'pgt_cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'unwind_arm64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session_head' in a translation unit 'timer_a64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'panic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'dt.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'arch_svc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'dt.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_ctx' in a translation unit 'panic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: lockdep.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'lockdep_node_head' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: lockdep.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'lockdep_lock' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'timer_a64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'trace_ext.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: lockdep.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'lockdep_node' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'asm-defines.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'panic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'dt.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'pm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'dt.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'trace_ext.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'tee_mm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'timer_a64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'pm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'pm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'unwind_arm64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'trace_ext.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'link_dummies_init.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'pgt_cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'pgt_cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_common_otp.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_hw_unique_key' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'mutex.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'spin_lock_debug.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'rpc_io_i2c.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'pgt_cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'panic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'asm-defines.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'arch_svc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_ctx' in a translation unit 'unwind_arm64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'pl011.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'msg_param.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'unwind_arm64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_ctx' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'link_dummies_paged.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'link_dummies_init.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'tee_time.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'core_mmu.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'unwind_arm64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'link_dummies_paged.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'ldelf_loader.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'pl011.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'link_dummies_init.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: lockdep.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'lockdep_lock_head' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'spin_lock_debug.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'pgt_cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_store.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_store_ops' in a translation unit 'arch_svc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'entry_fast.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'rpc_io_i2c.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session_head' in a translation unit 'mutex.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'pl011.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'tee_mm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'mutex.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'ldelf_loader.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'core_mmu.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'trace_ext.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'pl011.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'entry_fast.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_ctx' in a translation unit 'mutex.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'arch_svc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'ldelf_loader.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'ldelf_loader.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'tee_time.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'link_dummies_paged.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'link_dummies_init.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session_head' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'dt.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'rpc_io_i2c.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'pgt_cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'core_mmu.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'link_dummies_init.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'spin_lock_debug.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'tee_time.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'tee_time.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'trace_ext.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'pl011.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'spin_lock_debug.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'link_dummies_init.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'pseudo_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'initcall.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'pl011.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'pl011.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'recursive_mutex' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'initcall.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'secstor_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: interrupt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'itr_handler' in a translation unit 'gic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'unwind_arm64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: wait_queue.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'wait_queue_elem' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'core_mmu.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ts_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'ts_ops' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_node_info' in a translation unit 'ldelf_loader.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'secstor_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'core_mmu.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: interrupt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'itr_ops' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'user_ta_ctx' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_param' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'dt_device_match' in a translation unit 'ldelf_loader.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'tee_ta_session' in a translation unit 'secstor_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_time.h
+rule-id: MISRAC2012-RULE_1_1-b
+message: More than 31 initial characters in an external identifier: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_time.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an external identifier: 38
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 34
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.h
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 33
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: msg_param.h
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand lies between zero and one less than the width in bits of the underlying type of the LHS operand
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

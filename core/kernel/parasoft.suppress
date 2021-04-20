@@ -1,0 +1,959 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: msg_param.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: secstor_ta.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pseudo_ta.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: huk_subkey.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: console.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct tee_ta_session *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: msg_param.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'paddr_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct system_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: huk_subkey.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct ree_fs_ta_handle *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const struct ts_store_ops *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct shdr_encrypted_ta *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pm.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct pm_callback_handle *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint32_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pseudo_ta.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const struct pseudo_ta_head *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: handle.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'void **'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pseudo_ta.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct pseudo_ta_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const fdt32_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const uint32_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const struct ts_store_ops *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct shdr *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *' in function's argument
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: console.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const struct serial_driver *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct shdr_bootstrap_ta *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct user_ta_ctx *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct bin_handle *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: msg_param.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint64_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: initcall.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'const struct initcall *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: console.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: assert.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 511 external identifiers in one translation unit: 581
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 32
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_ta_session_is_cancelled' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '_fdt_reg_size' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: console.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'find_chosen_node' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ldelf_syscall_unmap' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'dt_map_dev' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: handle.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'handle_get' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ts_to_ta_ctx' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'new_session_id' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ldelf_syscall_copy_from_bin' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: msg_param.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'msg_param_mobj_from_noncontig' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'call_callbacks' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_misc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_is_buffer_inside' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: secstor_ta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'secstor_ta_open' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ree_fs_ta_get_tag' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pseudo_ta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_ta_init_pseudo_ta_session' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'dt_get_irq' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ldelf_syscall_close_bin' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the '__mutex_lock' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'set_invoke_timeout' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ree_fs_ta_open' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'binh_copy_to' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ldelf_syscall_map_zi' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'check_digest' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ldelf_syscall_gen_rnd_num' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_misc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_hs2b_rem_base' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: secstor_ta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'secstor_ta_read' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '_fdt_read_paddr' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: msg_param.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'msg_param_extract_pages' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_ta_close_session' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'dt_enable_secure_status' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'dt_find_compatible_driver' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: console.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'configure_console_from_dt' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ldelf_syscall_set_prot' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ree_fs_ta_read' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'check_client' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ldelf_syscall_map_bin' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_ta_cancel_command' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the '__mutex_lock_recursive' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_ta_open_session' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: mutex.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the '__mutex_read_lock' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: console.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'get_console_node_from_dt' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_ta_init_session_with_context' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ldelf_syscall_remap' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: console.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'console_flush' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_misc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_b2hs_add_base' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_misc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_b2hs' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'ldelf_syscall_open_bin' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pseudo_ta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'verify_pseudo_tas_conformance' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'tee_ta_clear_busy' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: huk_subkey.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'huk_compat' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_ta_context_find' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: refcount.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'refcount_inc' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: console.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'console_putc' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pseudo_ta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'copy_in_param' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_misc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_hs2b' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_misc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_is_buffer_intersect' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: handle.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'handle_put' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: refcount.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'refcount_dec' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pm.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'pm_change_state' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: handle.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'handle_lookup' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'rpc_load' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_misc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'is_valid_conf_and_notnull_size' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'dt_disable_status' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: huk_subkey.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'huk_subkey_derive' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_ta_init_session' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_ta_invoke_command' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tee_ta_try_set_busy' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_misc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'core_is_buffer_outside' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: handle.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'handle_db_is_empty' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: dt.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in '_fdt_reg_base_address' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ree_fs_ta.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'ree_fs_ta_close' function
+reason: We are not considering this rule. Reduces readability
+author: ruchika
+suppression-end
+
+suppression-begin
+file: msg_param.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pseudo_ta.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: panic.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ldelf_syscalls.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: user_ta.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: pseudo_ta.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tee_ta_manager.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Constant used as the right-hand operand of a shift operator shall be limited
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

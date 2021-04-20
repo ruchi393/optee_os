@@ -1,0 +1,943 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: isgraph.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'isgraph' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fputs.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'fputs' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: iscntrl.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'iscntrl' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'bpool_foreach_pool' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: toupper.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'toupper' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isprint.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'isprint' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'bget' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fwrite.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'fwrite' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fputc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'fputc' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isalpha.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'isalpha' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'bpool_foreach' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'raw_memalign' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isxdigit.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'isxdigit' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'bgetr' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'buf_get_pos' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: write.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'write' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: 'return' statement should be at the end of the 'gen_malloc_add_pool' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isdigit.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'isdigit' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tolower.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'tolower' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: qsort.c
+rule-id: MISRAC2012-RULE_15_5-a
+message: Provide only one exit point in 'qsort' function
+reason: This rule reduces readability.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ispunct.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'ispunct' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'realloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isgraph.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isgraph' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fwrite.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'fwrite' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isupper.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isupper' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'malloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isalpha.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isalpha' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: qsort.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'qsort' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'free' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isprint.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isprint' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: iscntrl.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'iscntrl' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isdigit.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isdigit' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fp.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'stdout' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fputc.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'fputc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tolower.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'tolower' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: islower.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'islower' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'calloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isspace.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isspace' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isxdigit.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isxdigit' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fputs.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'fputs' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sprintf.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'sprintf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fp.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'stderr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isalnum.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isalnum' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: toupper.c
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'toupper' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: islower.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'islower' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'calloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sprintf.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'sprintf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isalnum.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isalnum' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: toupper.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'toupper' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'free' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fputs.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'fputs' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ispunct.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'ispunct' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: qsort.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'qsort' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isalpha.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isalpha' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fp.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'stderr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isupper.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isupper' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isgraph.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isgraph' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fwrite.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'fwrite' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: iscntrl.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'iscntrl' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isprint.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isprint' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fp.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'stdout' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tolower.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'tolower' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fputc.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'fputc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isdigit.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isdigit' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: snprintf.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'snprintf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: snprintf.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'vsnprintf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'realloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isxdigit.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isxdigit' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isspace.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isspace' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'malloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'bufsize'
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fputc.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isalpha.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isalnum.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: iscntrl.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isdigit.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isprint.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: qsort.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isxdigit.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fputs.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isgraph.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'unsigned' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isspace.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ispunct.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: sprintf.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: fwrite.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: qsort.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: isupper.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: write.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: toupper.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: snprintf.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'double' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'char' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: tolower.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: islower.c
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.h
+rule-id: MISRAC2012-DIR_4_6-a
+message: Typedef name 'bufsize' does not contain any digits indicating the size
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: qsort.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_15_1-a
+message: Do not use the 'goto' statement
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct bfhead *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: qsort.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strdup.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct malloc_pool *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'struct bfhead *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strndup.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'uint8_t *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: write.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_11_5-a
+message: Pointer to void type should not be converted to pointer to object type 'char *'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_1_1-a
+message: More than 31 initial characters in an internal identifier: 35
+reason: Reason: Standard demands that first 31 characters should be distinct while this rule seems to restrict the number of charcters to 31 which is not correct.	
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget_malloc.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end
+
+suppression-begin
+file: bget.c
+rule-id: MISRAC2012-RULE_12_2-a
+message: Shifting operation should be enclosed with if checking that RHS operand does not exceed the upper limit (one less than the width in bits of the underlying type of the LHS operand)
+reason: Seem like False +ve's
+author: ruchika
+suppression-end

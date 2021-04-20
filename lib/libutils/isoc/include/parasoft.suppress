@@ -1,0 +1,1783 @@
+# Define suppressions to prevent reporting of selected rule violations
+# detected by Parasoft static analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isspace' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'ispunct' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strncpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'qsort' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'printf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isdigit' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'sprintf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'stdout' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strtoul' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'iscntrl' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'memmove' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'fputs' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'abort' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isalpha' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'memcpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'abs' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'tolower' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'putchar' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strcmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strrchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isupper' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'memchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'fputc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'FILE' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'memcmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'puts' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'calloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isprint' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strcpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isgraph' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'memset' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isxdigit' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'malloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'islower' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strstr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strlen' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'realloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'stderr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'toupper' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'fwrite' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'rand' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'isalnum' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'strncmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-RULE_21_2-b
+message: Reserved name 'free' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uintptr_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint8_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int_fast64_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isalpha' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint_fast32_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint_least32_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int8_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int_least8_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint16_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint_least8_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strncmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'memcmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'iscntrl' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'malloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'realloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strtoul' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'toupper' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'sprintf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint_fast64_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strrchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'stderr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int_fast8_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strncpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'rand' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int16_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'FILE' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'qsort' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int64_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isprint' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int_least32_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isgraph' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'stdout' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint_least16_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strlen' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'abort' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strstr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'memmove' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strcpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint_fast16_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strcmp' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'fputc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'printf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'tolower' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint32_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'free' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'puts' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'fwrite' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isalnum' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int_fast32_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isxdigit' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'memset' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'memcpy' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'intmax_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int_least64_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int_fast16_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isdigit' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'putchar' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isupper' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint_least64_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int32_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'isspace' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'snprintf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'memchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'intptr_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'strchr' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uintmax_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'calloc' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'fputs' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'abs' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint_fast8_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'vsnprintf' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'islower' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'ispunct' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'int_least16_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-RULE_21_2-c
+message: Reserved name 'uint64_t' used
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'int8_t'
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'int64_t'
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'int32_t'
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'uint8_t'
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'uintptr_t'
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'int16_t'
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'intptr_t'
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'uint16_t'
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'uint64_t'
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'uint32_t'
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: string.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: strings.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: unistd.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: assert.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: ctype.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdlib.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'long' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-a
+message: Typedef name 'intptr_t' does not contain any digits indicating the size
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-a
+message: Typedef name 'uintptr_t' does not contain any digits indicating the size
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'otp_stubs.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'mobj.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'rpc_io_i2c.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'tee_api.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'tee_api_objects.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'boot.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'thread_optee_smc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'unwind_arm64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'link_dummies_paged.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'dlfcn.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'main.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'timer_a64.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'pseudo_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'spin_lock_debug.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'ta_elf.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'entry_fast.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'tee_api_operations.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'link_dummies_init.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'aes-cts.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'asm-defines.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'core_mmu_lpae.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'arch_svc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'mobj_dyn_shm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'trace_ext.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'tee_time.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'pgt_cache.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'tee_api_property.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'pm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'ldelf_loader.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'aes-gcm.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'vendor_props.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'entry_std.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'uintptr_t'
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'intptr_t'
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'uint16_t'
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'uint32_t'
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'uint8_t'
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'int16_t'
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'int32_t'
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'int64_t'
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'int8_t'
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-c
+message: Use type from stdint.h instead of declaring your own type 'uint64_t'
+reason: We are baremetal project so these libraries are built in
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdio.h
+rule-id: MISRAC2012-DIR_4_6-b
+message: The basic numerical type 'int' should not be used
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-a
+message: Typedef name 'intptr_t' does not contain any digits indicating the size
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: stdint.h
+rule-id: MISRAC2012-DIR_4_6-a
+message: Typedef name 'uintptr_t' does not contain any digits indicating the size
+reason: We use mix of both types. It would be really disruptive for project to change this now.
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'sm3-hmac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'fputc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'mempool.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'core_mmu.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'strndup.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'sm4-cbc.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'msg_param.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'thread.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'pl011.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'write.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'tee_time_arm_cntpct.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'abs.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'strtoul.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'strdup.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'fwrite.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'cbc-mac.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'qsort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'sm4-ecb.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'abort.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'ldelf_syscalls.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'rng_fortuna.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'crypto.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'fputs.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'ree_fs_ta.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'nex_strdup.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'handle.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'sm4-ctr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'panic.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'mutex.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'signed_hdr.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'dt.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'sm3-hash.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
+
+suppression-begin
+file: malloc.h
+rule-id: MISRAC2012-DIR_4_8-a
+message: Consider hiding the implementation of the structure 'malloc_stats' in a translation unit 'console.c'
+reason: We are not considering this rule
+author: ruchika
+suppression-end
